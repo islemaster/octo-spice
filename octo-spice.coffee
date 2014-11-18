@@ -1,3 +1,8 @@
 class OctoSpice
 
-module.exports = OctoSpice
+  constructor: (@outputFunction) ->
+
+  begin: ->
+    @outputFunction("oogaboogabooga")
+
+module.exports = OctoSpice if module?
